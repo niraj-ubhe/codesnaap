@@ -1,0 +1,74 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    font-family: 'Times New Roman', Times, serif;
+    background-color:rgb(65, 4, 78);
+    width: 100%;
+    font-size: 30px;
+    color: white;
+}
+
+body{
+    
+    background-image: url("img3.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#emailInput, #passwordInput {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#loginBtn{
+    margin-top: 30px ;
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#loginDiv{ 
+    background-color: rgba(65, 4, 78, 0.7);
+    width: 250px;
+    height: 250px;
+    margin-top: 50%;
+    margin-right: 80%;
+    display: flex;
+    border-radius: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#loginDiv:hover{
+    transition-property: all;
+    transition-duration: 1s;
+    background-color:  rgba(65, 4, 78, 1);
+    height: 300px;
+    width:300px;
+
+}
+
+#faceId{
+    height: 20px;
+    width: 20px;
+}
+
+@media screen and (max-width: 600px){
+    #loginDiv{
+        height: 250px;
+        width: 250px;
+    }
+    body{
+        background-size: cover ;
+    }
+}
